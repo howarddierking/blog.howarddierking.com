@@ -12,7 +12,6 @@
     <h2 class="title"><a href="<%= post.path %>" rel="bookmark" title="<%= post.title %>"><%= post.title %></a></h2>
 
     <div class="post-info">
-    <% debugger; %>
       By <%= R.defaultTo(site.author, post.author) %> On <%= moment(post.date).format('MMMM Do YYYY') %> 
     </div>
 
