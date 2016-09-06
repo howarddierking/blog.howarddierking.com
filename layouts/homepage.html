@@ -1,0 +1,55 @@
+<% inherits('default.html') %>
+
+<% for (var i=0; i<pagination.files.length; i++){ 
+  let post=pagination.files[i]; %>
+<div class="post excerpt date_con_handler">
+  <div class="date_container">
+    <%= moment(post.date).format('DD MMM YYYY') %>
+    
+  </div>
+
+  <div class="home_post_container">
+    <h2 class="title"><a href="<%= post.path %>" rel="bookmark" title="<%= post.title %>"><%= post.title %></a></h2>
+
+    <div class="post-info">
+      By <a href="#" rel="author" title="Posts by Howard Dierking">Howard Dierking</a> On <%= moment(post.date).format('MMMM Do YYYY') %> 
+    </div>
+
+    <div class="post-content image-caption-format-1">
+      <%- post.excerpt %>
+    </div>
+
+    <div class="post_meta_custom">
+      <div class="comment_cont">
+        <a class="comment-icon" href="<%= post.path %>#disqus_thread" rel="nofollow"><span class="commentnumber">0 Comments</span></a>
+      </div>
+
+      <div class="readMore">
+        <a href="<%= post.path %>" rel="bookmark" title="<%= post.title %>">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<% } %>
+
+<div class='pagination'>
+  <ul>
+    <li>
+      <% if(pagination.previous){ %>
+      <a href="/<%= pagination.previous.path %>" class="previous">Previous</a>
+      <% } else { %>
+      <span class="previous">Previous</span>
+      <% } %>
+    </li>
+    <li class="current">
+      <span class="page_number">Page: <%= pagination.num %> of <%= pagination.pages.length %></span>  
+    </li>
+    <li>
+      <% if (pagination.next){ %>
+      <a href="/<%= pagination.next.path %>" class="next">Next</a>
+      <% } else { %>
+      <span class="next">Next</span>
+      <% } %> 
+    </li>
+  </ul>
+</div>
