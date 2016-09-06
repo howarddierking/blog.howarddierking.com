@@ -4,7 +4,8 @@
   "description": "Howard Dierking personal blog",
   "main": "build.js",
   "scripts": {
-    "start": "node ./build.js"
+    "start": "node ./serve.js",
+    "build": "node ./build.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "metalsmith-watch": "^1.0.3",
     "moment": "^2.14.1",
     "qejs": "^3.0.5",
+    "ramda": "^0.22.1",
     "swig": "^1.4.2",
     "tinyliquid": "^0.2.33"
   },
