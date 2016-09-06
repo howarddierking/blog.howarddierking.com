@@ -10,6 +10,8 @@ const collections = require('metalsmith-collections');
 const moment = require('moment');
 const excerpts = require('metalsmith-excerpts');
 const pagination = require('metalsmith-pagination');
+const feed = require('metalsmith-feed');
+const sitemap = require('metalsmith-mapsite');
 
 var build = metalsmith(__dirname)
   .metadata({
@@ -32,6 +34,9 @@ var build = metalsmith(__dirname)
   .use(permalinks({
     pattern: ':date/:title'
   }))
+  .use(feed({
+    collection: 'blogposts'
+  }))
   .use(pagination({
     'blogposts': {
       perPage: 5,
@@ -42,6 +47,9 @@ var build = metalsmith(__dirname)
         title: 'Archive'
       }
     }
+  }))
+  .use(sitemap({
+    hostname: 'http://blog.howarddierking.com'
   }))
   .use(layouts({
     engine: 'qejs',
