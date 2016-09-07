@@ -1,7 +1,7 @@
 ---
 title: The Role of QA in Cloud DevOps
 layout: post.html
-published: false
+draft: true
 ---
 
 [Warning: Potentially Inflammatory Topic]

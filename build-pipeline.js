@@ -20,6 +20,7 @@ module.exports = metalsmith(__dirname)
       author: 'Howard Dierking'
     }
   })
+  .use(drafts())
   .use(markdown())
   .use(excerpts())
   .use(dateInFileName({
