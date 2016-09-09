@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    image: node:6
+    volumes:
+      - .:/usr/local/blog.howarddierking.com
+    ports:
+      - "8000:8080"
+    command: node /usr/local/blog.howarddierking.com/serve.js
