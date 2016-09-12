@@ -3,6 +3,8 @@ const watch = require('metalsmith-watch');
 
 require('./build-pipeline')
   .use(serve({
+    host: "0.0.0.0",
+    port: "8080",
     verbose: true
   }))
   .use(watch({
