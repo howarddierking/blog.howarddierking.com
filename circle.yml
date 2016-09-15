@@ -5,8 +5,9 @@ machine:
     - docker
 
 dependencies: 
-  - docker pull node:6
-  - docker pull cgswong/aws:s3cmd
+  override:
+    - docker pull node:6
+    - docker pull cgswong/aws:s3cmd
 
 test:
   override:
