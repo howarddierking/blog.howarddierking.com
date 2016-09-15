@@ -17,4 +17,5 @@ deployment:
   livesite: 
     branch: 6-metalsmith
     commands:
-        - docker run -v ~/.aws:/root/.aws cgswong/aws:aws s3 sync `pwd`/site s3://metalsmith-blog.howarddierking.com --region us-west-2 --delete
+      - ls `pwd`
+      # - docker run -v ~/.aws:/root/.aws cgswong/aws:aws s3 sync `pwd`/site s3://metalsmith-blog.howarddierking.com --region us-west-2 --delete
