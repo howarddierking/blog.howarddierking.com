@@ -7,7 +7,7 @@ machine:
 dependencies: 
   override:
     - docker pull node:6
-    - docker pull cgswong/aws:s3cmd
+    - docker pull cgswong/aws:aws
 
 test:
   override:
@@ -17,4 +17,4 @@ deployment:
   livesite: 
     branch: 6-metalsmith
     commands:
-        - docker run -v ~/.aws:/root/.aws cgswong/aws:s3cmd aws s3 sync ./site s3://metalsmith-blog.howarddierking.com --region us-west-2 --delete
+        - docker run -v ~/.aws:/root/.aws cgswong/aws:aws aws s3 sync ./site s3://metalsmith-blog.howarddierking.com --region us-west-2 --delete
