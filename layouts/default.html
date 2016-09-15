@@ -112,9 +112,9 @@
                 <li class="widget widget-sidebar">
                   <h3>Recent Posts</h3>
                   <ul>
-                    <% for(var i=0; i < blogposts.length; i++) { %>
-                      <li><a href="/<%= blogposts[i].path %>"><%= blogposts[i].title %></a></li>
-                    <% } %>
+                    <% R.forEach(recent => { %>
+                      <li><a href="/<%= recent.path %>"><%= recent.title %></a></li>
+                    <% }, blogposts) %>
                   </ul>
                 </li>
               </ul>
