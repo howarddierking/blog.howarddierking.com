@@ -3,7 +3,17 @@ machine:
     America/Los_Angeles
   services:
     - docker
-    
+
+dependencies: 
+  - docker pull node:6
+  - docker pull cgswong/aws:s3cmd
+
 test:
   override:
     - docker run -v `pwd`:/usr/local/blog.howarddierking.com node:6 /usr/local/blog.howarddierking.com/build.sh
+
+deployment:
+  livesite: 
+    branch: 6-metalsmith
+    commands:
+        - docker run -v ~/.aws:/root/.aws cgswong/aws:s3cmd aws s3 sync ./site s3://metalsmith-blog.howarddierking.com --region us-west-2 --output text --delete
