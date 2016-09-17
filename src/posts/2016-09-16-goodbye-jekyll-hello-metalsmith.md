@@ -26,7 +26,7 @@ So, that prompted me to see what Javascript static site generators were out ther
 * [Metalsmith.io](http://www.metalsmith.io/)
 * [Brunch](https://github.com/brunch/brunch)
 
-I've spent a good bit of time with Metalsmith over the last week or so and while I still intend to try out the others listed, I'm alreay pretty sold on it. Here are a couple things that I _really_ like thus far about Metalsmith compared to Jekyll.
+I've spent a good bit of time with Metalsmith over the last week or so and while I still intend to try out the others listed, I'm already pretty sold on it. Here are a couple things that I _really_ like thus far about Metalsmith compared to Jekyll.
 
 * Jekyll is built on Ruby, which means installing a bunch of - sometimes native - gems at your machine level. See above rant for why I'm not a fan. Getting started with Metalsmith consists of installing its NPM package (locally) and ... that's it.
 * In the name of "convention over configuration", Jekyll is opinionated about the names and structure of directories in a Jekyll project. Metalsmith inserts zero opinion or constraint because the framework itself is little more than a UNIX-style pipe and filter engine. The framework pushes a bunch of files through a pipeline that you define in code. Additionally, everything in the pipeline is a plugin, so it really can be whatever you want for it to be. 
@@ -72,7 +72,7 @@ metalsmith(__dirname)
   });
 ```
 
-One other thing to point out here is, as I mentioned earlier, nearly everything in a Metalsmith project is a plugin and installed as an NPM package (including the markdown processor in this example). This give you tons of choices in how you design and configure your site generator.
+One other thing to point out here is, as I mentioned earlier, nearly everything in a Metalsmith project is a plugin and installed as an NPM package (including the markdown processor in this example). This gives you tons of choices in how you design and configure your site generator.
 
 One of my very favorite things about Metalsmith is the [layouts](https://github.com/superwolff/metalsmith-layouts) plugin. The plugin allows you to specify almost everything, including your desired template engine. The engine simply needs to be supported by [consolidate.js](https://github.com/tj/consolidate.js), and as you can see, [there are many supported engines](https://github.com/tj/consolidate.js#supported-template-engines). As for me, while it may not be the "new hotness" of template engines, I selected ejs, because it's Javascript.
 
