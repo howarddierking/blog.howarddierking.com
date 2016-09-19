@@ -38,3 +38,9 @@ jspm_packages
 
 # site (build output) directory
 site/
+
+# OSX
+.DS_Store
+
+# expanded theme directory
+reference/theme-wise-words/

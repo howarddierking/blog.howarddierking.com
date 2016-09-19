@@ -1,55 +1,44 @@
 <% inherits('default.html') %>
 
-<% for (var i=0; i<pagination.files.length; i++){ 
-  let post=pagination.files[i]; %>
-<div class="post excerpt date_con_handler">
-  <div class="date_container">
-    <%= moment(post.date).format('DD MMM YYYY') %>
-    
-  </div>
+<div class="row main-content">
+  <div class="offset1 span6 zone-content">
 
-  <div class="home_post_container">
-    <h2 class="title"><a href="<%= post.path %>" rel="bookmark" title="<%= post.title %>"><%= post.title %></a></h2>
-
-    <div class="post-info">
-      By <%= R.defaultTo(site.author, post.author) %> On <%= moment(post.date).format('MMMM Do YYYY') %> 
-    </div>
-
-    <div class="post-content image-caption-format-1">
-      <%- post.excerpt %>
-    </div>
-
-    <div class="post_meta_custom">
-      <div class="comment_cont">
-        <a class="comment-icon" href="<%= post.path %>#disqus_thread" rel="nofollow"><span class="commentnumber">0 Comments</span></a>
-      </div>
-
-      <div class="readMore">
-        <a href="<%= post.path %>" rel="bookmark" title="<%= post.title %>">Read More</a>
-      </div>
-    </div>
-  </div>
-</div>
-<% } %>
-
-<div class='pagination'>
-  <ul>
-    <li>
-      <% if(pagination.previous){ %>
-      <a href="/<%= pagination.previous.path %>" class="previous">Previous</a>
-      <% } else { %>
-      <span class="previous">Previous</span>
+    <!-- post listing -->
+    <ul class="blog-posts">
+      <% for (let i = 0; i < pagination.files.length; i++){ 
+      let post=pagination.files[i]; %>
+      <li>
+        <article class="blog-post">
+          <div class="published"><%= moment(post.date).format('DD MMM YYYY') %></div>
+          <h1><a href="<%= post.path %>"><%= post.title %></a></h1>
+          <p><%- post.excerpt %></p>
+        </article>
+      </li>
       <% } %>
-    </li>
-    <li class="current">
-      <span class="page_number">Page: <%= pagination.num %> of <%= pagination.pages.length %></span>  
-    </li>
-    <li>
-      <% if (pagination.next){ %>
-      <a href="/<%= pagination.next.path %>" class="next">Next</a>
-      <% } else { %>
-      <span class="next">Next</span>
-      <% } %> 
-    </li>
-  </ul>
+    </ul>
+
+    <!-- pagination -->
+    <div class="pagination">
+    <%
+    let previous = R.defaultTo(pagination.first, pagination.previous);
+    let next = R.defaultTo(pagination.last, pagination.next);
+    %>
+      <ul>
+        <li><a href="/<%= previous.path %>">Previous</a></li>
+        <% 
+        for (let j = 0; j < pagination.pages.length; j++ ){ 
+          if (pagination.num - 1 === j){
+        %>
+        <li class="active">
+        <%  } else { %>
+        <li>
+        <%  } %>
+        <a href="/<%= pagination.pages[j].path %>"><%= j + 1 %></a>
+        </li>  
+        <% } %>
+        <li><a href="/<%= next.path %>">Next</a></li>
+      </ul>
+    </div>
+
+  </div>
 </div>
