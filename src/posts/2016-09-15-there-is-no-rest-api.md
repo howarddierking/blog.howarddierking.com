@@ -1,9 +1,8 @@
 ---
 layout: post.html
 title: There is No REST API
+headerImage: /images/there-is-no-spoon.jpeg
 ---
-
-![There is no spoon](/images/there-is-no-spoon.jpeg)
 
 I've spent some time talking with my teams recently about REST from the perspective of an API, and also how APIs built through the lens of technologies like Swagger go against some of the most important principles of REST. As I've reflected more over conversations, there is one even more fundamental thing that tends to get lost in the conversation. And that is that _REST doesn't describe APIs_. REST describes the architectural characteristics of an _entire system_, which includes all of the different components of that system. Trying to make a systems-level claim based on one component, or even one layer, of that system simply doesn't work.
 

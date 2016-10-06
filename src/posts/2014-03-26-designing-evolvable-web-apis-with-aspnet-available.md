@@ -1,8 +1,8 @@
 ---
 layout: post.html
 title: 'Designing Evolvable Web APIs with ASP.NET is Now Available!'
+headerImage: 'http://akamaicovers.oreilly.com/images/0636920026617/cat.gif'
 ---
-![Designing Evolvable Web APIs with ASP.NET](http://akamaicovers.oreilly.com/images/0636920026617/cat.gif)
 
 Although it actually became available last week, I hadn't blogged about it yet, so correcting that oversight here...
 

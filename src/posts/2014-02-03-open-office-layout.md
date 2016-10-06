@@ -1,8 +1,8 @@
 ---
 layout: post.html
 title: "Open Office Layouts, De-personalization, and Mobility"
+headerImage: /images/nuget-teamroom.jpg
 ---
-![The New NuGet Team Room](/images/nuget-teamroom.jpg) 
 
 Today opens a new chapter in my experience at Microsoft - my team (and larger group) has made the move from the Microsoft-traditional individual offices to the open office layout (team rooms, more specifically). Now, before I come off as negative, I'll enumerate some of the things that I really like about the new layout.
 

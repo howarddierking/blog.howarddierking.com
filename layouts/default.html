@@ -5,11 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="UTF-8">
-    <title>Wise Words - A typographic HTML template</title>
+    <title><%= title %></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TODO: add canonical hostname to site metadata and then fully qualify the canonical link -->
+<!-- TODO: clean up canonical name for the site index page -->
+    <link rel="canonical" href="<%= path %>">
 
-    <link href='http://fonts.googleapis.com/css?family=Poiret+One|PT+Serif|Open+Sans:400,300' 
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One|PT+Serif|Open+Sans:400,300'
           rel='stylesheet' type='text/css'>
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">

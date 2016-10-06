@@ -1,11 +1,10 @@
 ---
 layout: post.html
 title: Leaving Microsoft
+headerImage: /images/blue_badge.jpg
 ---
 
 After 8 amazing years, it's time for me to move on. I'll articulate my own rationale for leaving shortly, but it would be disingenuous to not first list some of the many, many ways that I have grown and benefited from my time working at Microsoft. 
-
-<img src="/images/blue_badge.jpg" alt="The infamous blue badge" style="float:right; margin:1em">
 
 * I got to run the [developer certification program](https://www.microsoft.com/learning/en-us/mcpd-certification.aspx) where I designed and built programs that helped start and grow the careers of many. It was also in this role that I had the opportunity to file my first patent.
 * I ran [MSDN Magazine](http://msdn.microsoft.com/en-us/magazine/default.aspx), which is to date the best job I've ever had. I owned the business goals, the content strategy, the relationships with authors, readers, and our publisher. I got to travel to New York quite a bit and had a whole set of amazing experiences like learning the subway system from none other than [Charles Petzold](http://charlespetzold.com)! 

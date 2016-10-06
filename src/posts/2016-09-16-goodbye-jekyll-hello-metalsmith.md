@@ -1,9 +1,8 @@
 ---
 layout: post.html
 title: Goodbye Jekyll, Hello Metalsmith!
+headerImage: /images/its-not-me.png 
 ---
-
-![It's totally you](/images/its-not-me.png)
 
 While I love the simplicity of [Jekyll](https://jekyllrb.com/) for generating static Web sites from markup documents, the fact that Jekyll is built on [Ruby](https://www.ruby-lang.org/en/) and its respective ecosystem has been giving me increasing frustration. The reason for the growing frustration comes down to this:
 
