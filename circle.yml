@@ -6,12 +6,12 @@ machine:
 
 dependencies:
   override:
-    - docker pull node:6
+    - docker pull mhart/alpine-node:6
     - docker pull cgswong/aws:aws
 
 test:
   override:
-    - docker run -v `pwd`:/usr/local/blog.howarddierking.com node:6 /usr/local/blog.howarddierking.com/build.sh
+    - docker run -v `pwd`:/usr/local/blog.howarddierking.com mhart/alpine-node:6 /usr/local/blog.howarddierking.com/build.sh
 
 deployment:
   livesite:

@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: node:6
+    image: mhart/alpine-node:6
     volumes:
       - .:/usr/local/blog.howarddierking.com
     ports:
