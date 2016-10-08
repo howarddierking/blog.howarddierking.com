@@ -1,11 +1,10 @@
 ---
 layout: post.html
 title: Swagger Ain't REST - is that OK?
+headerImage: /images/you-keep-using-that-word.jpg
 ---
 
-![RESTful APIs](/images/you-keep-using-that-word.jpg)
-
-If you've spent much time with me, you've undoubtedly heard me ramble on at length about linked data. And in those conversations, you've likely heard me say something to the effect of "linked data _is_ REST". However, I haven't really spent much time talking about REST by itself - especially considering the amount of importance heaped on it by proponents of the "API Economy". I've focused my attentions elsewhere primarily because as an architectural style, REST isn't something that a team can just go and implement. Rather, REST describes (in the form of constraints) the properties of the World Wide Web. 
+If you've spent much time with me, you've undoubtedly heard me ramble on at length about linked data. And in those conversations, you've likely heard me say something to the effect of "linked data _is_ REST". However, I haven't really spent much time talking about REST by itself - especially considering the amount of importance heaped on it by proponents of the "API Economy". I've focused my attentions elsewhere primarily because as an architectural style, REST isn't something that a team can just go and implement. Rather, REST describes (in the form of constraints) the properties of the World Wide Web.
 
 I want to briefly wade into the general topic of REST (I'm sure to great disagreement from some of you) for 2 reasons:
 
@@ -14,7 +13,7 @@ I want to briefly wade into the general topic of REST (I'm sure to great disagre
 
 So, let's dive in.
 
-### REST 
+### REST
 
 Let's do a [very] quick definition of REST. REST was *part of* Roy Fielding's doctoral thesis; the purpose of the thesis was not to define something novel (e.g. REST), but rather to compare and contrast architectural styles of the time with the style of the project that Fielding was working on in his graduate studies. That project was the WWW, and this is really important, because it gives us insight into the "spirit of REST." As Fielding looked at what made the WWW unique, he landed on the following (note - I'm paraphrasing for readability):
 
@@ -53,7 +52,7 @@ Regardless of the buzzwords used to describe it, most developers - and companies
 
 For its intended purpose, Swagger is just fine. It enables the developer to define function signatures, it allows for parameter definitions to include complex types defined using a syntax like JSON-schema, it even accounts for different aspects of HTTP by defining functions in terms of URL templates and HTTP methods, and specifying return values in terms of status codes. There's just one problem...
 
-> A Swagger API is not RESTful - neither in definition nor in spirit. 
+> A Swagger API is not RESTful - neither in definition nor in spirit.
 
 It fails the definition test because it violates the uniform interface constraint of using links to navigate between different states (operations or data). It also would require a good deal of hacking to have a Swagger-designed API support things like code-on-demand.
 

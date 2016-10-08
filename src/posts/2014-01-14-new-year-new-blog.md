@@ -2,6 +2,7 @@
 layout: post.html
 title: "New Year, New Blog"
 ---
+
 Over the past year, I've been wanting to blog a good bit more for a couple of different reasons - many of them completely unrelated to blogging. For example:
 
 * I'm convinced at this point in time that the manner in which we've been thinking about building dynamic Web sites and applications for the last 15 years or so (e.g. Web-server driven, dynamic application fameworks and CMSs) is completely wrong and in many ways runs counter to how the Web is intended to work (In fact, this will be one of the subjects I'm planning to cover in my next [Pluralsight](http://pluralsight.com/training) course). As such, I've been wanting to experiment more with static site generators like [Jekyll](http://jekyllrb.com/) and taking control over the technology behind my blog seemed like an easy way to create that opportunity.

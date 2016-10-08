@@ -1,193 +1,54 @@
 <!DOCTYPE html>
-
-<html class="no-js" lang="en-US">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <title><%= title %></title>
-  <link href="apple-touch-icon.png" rel="apple-touch-icon">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="black" name="apple-mobile-web-app-status-bar-style">
-  <link href="/css/greenchilli_styles.css" media="all" rel="stylesheet" type="text/css">
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,700" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title><%= title %></title>
 
-  <link rel="canonical" href="<%= (site.url + '/' + path) %>">
-  <script src="/scripts/jquery-1.10.2.js"></script>
-  <script src="/scripts/jquery-migrate-1.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="/scripts/modernizr.min.js"></script>
-  <script src="/scripts/customscript.js"></script>
-  <style type="text/css">
-  #header h1, #header h2{
-    /*text-indent:-999em;*/
-    min-width:286px
-  }
-  #header h1 a, #header h2 a{
-    min-width:188px;
-    display:block;
-    min-height:70px;
-    line-height:70px
-  }
-  body{
-    background-color:#EBEBEB
-  }
-  .nav-previous a, .nav-next a, .comment_cont span, #navigation ul ul a:hover, .flex-control-nav li a:hover, #navigation ul a:hover,.flex-control-nav li .active,#tabber ul.tabs li a.selected,#tabber ul.tabs li.tab-recent-posts a.selected,.readMore a,.currenttext, .pagination a:hover,.mts-subscribe input[type="submit"], .date_container, #commentform input#submit,.comment_cont span{
-    background-color:#8FC400
-  }
-  .tagcloud a{
-    border-color:#8FC400
-  }
-  .single_post a, a:hover, #logo a, .textwidget a, #commentform a, #tabber .inside li a, .copyrights a:hover, a,.f-widget .popular-posts li a:hover, .comment-meta a,.pp_date
-  {
-    color:#8FC400
-  }
-  .comment_cont span:after{
-    border-right-color:#8FC400
-  }
-  </style>
-  <link href="{{ site.url }}/rss.xml" rel="alternate" title="Howard Dierking Blog » Feed" type="application/rss+xml">
-  <script>
+    <link rel="canonical" href="<%= site.url + R.when(R.equals('/./'), v => '/', path) %>">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-47167390-1']);
-  _gaq.push(['_trackPageview']);
+    <link href='http://fonts.googleapis.com/css?family=Ssource+Code+Pro|Poiret+One|PT+Serif|Open+Sans:400,300'
+          rel='stylesheet' type='text/css'>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/socialicons.css" rel="stylesheet">
+    <link href="/css/glyphicons.css" rel="stylesheet">
+    <link href="/css/halflings.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/colors/color-nytimes.css" rel="stylesheet" id="colorcss">
+    <link rel="stylesheet" href="/css/custom.css">
 
-  </script>
-  
-  <!--[if IE 7]><link rel="stylesheet" href="http://demo.mythemeshop.com/greenchilli/wp-content/plugins/wp-review/assets/css/wp-rating-ie7.css"> <![endif]-->
+    <script src="/scripts/modernizr.js"></script>
 
-  <style type="text/css">
-  .percentage-point .review-result{
-    background-color:#333
-  }
-  </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
 </head>
+<body>
 
-<body class="home blog main cat-7-id cat-30-id" id="blog">
-  <header class="main-header">
-    <div class="container">
-      <div id="header">
-        <h1 id="logo"><a href="/">_howard.blog()</a></h1>
+<div class="container">
+<%- render('partials/header') %>
 
-        <form action="http://www.google.com/search" class="search-form" id="searchform" method="get">
-          <fieldset>
-            <input id="s" name="as_q" onfocus="if(this.value=='Search this Site...')this.value='';" type="text" value="">
-            <input type="hidden" name="as_sitesearch" value="http://blog.howarddierking.com">
-          </fieldset>
-        </form>
-      </div>
+<%- contents %>
 
-      <div class="secondary-navigation">
-        <nav id="navigation">
-          <ul class="menu" id="menu-main-navigation">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1225" id="menu-item-1225"><a href="/">Home</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+<%- render('partials/footer') %>
+<%- render('partials/copyright') %>
+</div>  <!-- End Container -->
 
-  <div class="main-container">
-    <div id="page">
-      <div class="content">
-        <article class="article">
-          <div id="content_box">
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/scripts/jquery-1.9.1.js"></script>
+<script src="/scripts/bootstrap.js"></script>
+<script src="/scripts/tinynav.js"></script>
+<script src="/scripts/template.js"></script>
 
-            <%- contents %>
-
-          </div>
-        </article>
-
-        <aside class="sidebar c-4-12">
-          <div class="g" id="sidebars">
-            <div class="sidebar">
-              <ul class="sidebar_list">
-                <li class="widget widget-sidebar">
-                  <h3>Recent Posts</h3>
-                  <ul>
-                    <% R.forEach(recent => { %>
-                      <li><a href="/<%= recent.path %>"><%= recent.title %></a></li>
-                    <% }, blogposts) %>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="footer-widgets">
-        <div class="footer-w-container">
-          <div class="f-widget f-widget-1">
-          </div>
-
-          <div class="f-widget f-widget-2">
-            <div class="widget">
-              <h3>About Me</h3>
-
-              <div class="textwidget">
-                I'm into a bit of everything. Some might say that makes me attention-deficit - I like to think it gives me the ability to see things from more angles. I'm a huge technology enthusiast, and while I work for (and love working for) one particularly large tech company, my interests are much broader (as you'll see from reading this blog). The opinions here are mine alone.
-              </div>
-            </div>
-          </div>
-
-          <div class="f-widget last">
-            <div class="widget">
-              <div class="social-profile-icons">
-                <ul class="">
-                  <li class="social-facebook"><a href="https://www.facebook.com/howarddierking" title="Facebook">Facebook</a></li>
-                  <li class="social-gplus"><a href="https://plus.google.com/u/0/+HowardDierking/posts/p/pub" title="Google+">Google+</a></li>
-                  <li class="social-linkedin"><a href="http://www.linkedin.com/in/howarddierking" title="LinkedIn">Linkedin</a></li>
-                  <li class="social-rss"><a href="{{ site.url }}/rss.xml" title="RSS">RSS</a></li>
-                  <li class="social-twitter"><a href="https://twitter.com/howard_dierking" title="Twitter">Twitter</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="copyrights">
-          <div class="row" id="copyright-note">
-            <span>Copyright © 2014.</span>
-
-            <div class="top">
-              Theme by <a href="http://mythemeshop.com/">MyThemeShop</a>. <a class="toplink" href="#top">Back to Top ↑</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </footer>
-    <script type="text/javascript">
-    jQuery(document).ready(function(e) {
-      (function($){
-        $('#searchform input').attr('placeholder','Search this site...');
-        $('.comment-author').parent('div').addClass('commentContainer');
-      }(jQuery));
-    });
-    </script>
-    <script>
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'bloghowarddierkingcom';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
-  </body>
-  </html>
+</body>
+</html>

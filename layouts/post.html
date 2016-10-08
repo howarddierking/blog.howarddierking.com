@@ -1,5 +1,10 @@
 <% inherits('default.html') %>
-<h2><%= title %></h2>
+<h1>
+  <p><%= title %></p>
+  <% if(typeof headerImage !== 'undefined'){ %>
+  <p><img src="<%= headerImage %>" alt=""></p>
+  <% } %>    
+</h1>
 
 <div class="post">
 	<%- contents %>

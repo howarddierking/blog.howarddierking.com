@@ -2,6 +2,7 @@
 layout: post.html
 title: "On Juggling"
 ---
+
 I realize that there are entire shelves worth of books on this subject, but enough people have asked me about my approach to juggling all of the email, meetings, and various deliverables at Microsoft that I figured I would add my 2 cents to the corpus in hopes that maybe it might provide one extra nugget to someone. As surprising as it may seem (it does to me much of the time), I also have a life outside of Microsoft that is pretty hectic in its own right, including training content authoring, independent consulting, church commitments, and most importantly, my wife and 3 daughters. With all of those metaphorical balls constantly in motion, I've had to develop some skills over the last few years in order to get things accomplished and simultaneously maintain sanity.
 
 ## Managing Email

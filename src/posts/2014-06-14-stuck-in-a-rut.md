@@ -2,8 +2,7 @@
 layout: post.html
 title: Stuck in a Rut
 ---
-<em>Warning: This is a completely downer of a post. If you don't want to risk being pulled down with me, stop now.</em>
-
+*Warning: This is a completely downer of a post. If you don't want to risk being pulled down with me, stop now.*
 
 I don't know whether the place I'm at is particular to software folks or whether it's something more general that everybody has to deal with at one point or another.
 

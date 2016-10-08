@@ -9,6 +9,7 @@ const moment = require('moment');
 const excerpts = require('metalsmith-excerpts');
 const pagination = require('metalsmith-pagination');
 const feed = require('metalsmith-feed');
+const path = require('metalsmith-path');
 const sitemap = require('metalsmith-mapsite');
 const R = require('ramda');
 
@@ -29,7 +30,7 @@ module.exports = metalsmith(__dirname)
   .use(collections({
     blogposts: {
       pattern: 'posts/*.html',
-      reverse: true 
+      reverse: true
     }
   }))
   .use(permalinks({
@@ -43,11 +44,15 @@ module.exports = metalsmith(__dirname)
       perPage: 5,
       layout: 'homepage.html',
       first: 'index.html',
-      path: 'archive/page:num/index.html',
+      path: 'page:num/index.html',
       pageMetadata: {
-        title: 'Archive'
+        title: 'Howard Dierking\'s Blog'
       }
     }
+  }))
+  .use(path({
+    baseDirectory: '/',
+    directoryIndex: 'index.html'
   }))
   .use(sitemap({
     hostname: 'http://blog.howarddierking.com'
