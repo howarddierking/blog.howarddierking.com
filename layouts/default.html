@@ -8,9 +8,8 @@
     <title><%= title %></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- TODO: add canonical hostname to site metadata and then fully qualify the canonical link -->
-<!-- TODO: clean up canonical name for the site index page -->
-    <link rel="canonical" href="<%= path %>">
+
+    <link rel="canonical" href="<%= site.url + R.when(R.equals('/./'), v => '/', path) %>">
 
     <link href='http://fonts.googleapis.com/css?family=Ssource+Code+Pro|Poiret+One|PT+Serif|Open+Sans:400,300'
           rel='stylesheet' type='text/css'>
@@ -22,6 +21,7 @@
     <link href="/css/halflings.css" rel="stylesheet">
     <link href="/css/template.css" rel="stylesheet">
     <link href="/css/colors/color-nytimes.css" rel="stylesheet" id="colorcss">
+    <link rel="stylesheet" href="/css/custom.css">
 
     <script src="/scripts/modernizr.js"></script>
 

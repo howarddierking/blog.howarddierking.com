@@ -5,7 +5,7 @@
   <div class="offset1 span6 zone-content">
     <!-- post listing -->
     <ul class="blog-posts">
-      <% for (let i = 0; i < pagination.files.length; i++){ 
+      <% for (let i = 0; i < pagination.files.length; i++){
       let post=pagination.files[i]; %>
       <li>
         <article class="blog-post">
@@ -24,19 +24,19 @@
     let next = R.defaultTo(pagination.last, pagination.next);
     %>
       <ul>
-        <li><a href="/<%= previous.path %>">Previous</a></li>
-        <% 
-        for (let j = 0; j < pagination.pages.length; j++ ){ 
+        <li><a href="<%= previous.path %>">Previous</a></li>
+        <%
+        for (let j = 0; j < pagination.pages.length; j++ ){
           if (pagination.num - 1 === j){
         %>
         <li class="active">
         <%  } else { %>
         <li>
         <%  } %>
-        <a href="/<%= pagination.pages[j].path %>"><%= j + 1 %></a>
-        </li>  
+        <a href="<%= pagination.pages[j].path %>"><%= j + 1 %></a>
+        </li>
         <% } %>
-        <li><a href="/<%= next.path %>">Next</a></li>
+        <li><a href="<%= next.path %>">Next</a></li>
       </ul>
     </div>
   </div>

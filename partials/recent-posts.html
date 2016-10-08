@@ -5,7 +5,7 @@
 
   <ul>
     <% R.forEach(recent => { %>
-    <li><a href="/<%= recent.path %>"><%= recent.title %></a></li>
+    <li><a href="<%= recent.path %>"><%= recent.title %></a></li>
     <% }, blogposts) %>
   </ul>
 </article>
