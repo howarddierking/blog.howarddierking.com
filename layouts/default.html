@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="<%= site.url + R.when(R.equals('/./'), v => '/', path) %>">
+
+    <link href='http://fonts.googleapis.com/css?family=Ssource+Code+Pro|Poiret+One|PT+Serif|Open+Sans:400,300'
+          rel='stylesheet' type='text/css'>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/socialicons.css" rel="stylesheet">
+    <link href="/css/glyphicons.css" rel="stylesheet">
+    <link href="/css/halflings.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <link href="/css/colors/color-nytimes.css" rel="stylesheet" id="colorcss">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <script src="/scripts/modernizr.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+<%- render('partials/header') %>
+
+<%- contents %>
+
+<%- render('partials/footer') %>
+<%- render('partials/copyright') %>
+</div>  <!-- End Container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/scripts/jquery-1.9.1.js"></script>
+<script src="/scripts/bootstrap.js"></script>
+<script src="/scripts/tinynav.js"></script>
+<script src="/scripts/template.js"></script>
+
+</body>
+</html>

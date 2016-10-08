@@ -1,0 +1,49 @@
+<% inherits('default.html') %>
+
+<div class="row main-content">
+  <!-- blog posts -->
+  <div class="offset1 span6 zone-content">
+    <!-- post listing -->
+    <ul class="blog-posts">
+      <% for (let i = 0; i < pagination.files.length; i++){
+      let post=pagination.files[i]; %>
+      <li>
+        <article class="blog-post">
+          <div class="published"><%= moment(post.date).format('DD MMM YYYY') %></div>
+          <h1><a href="<%= post.path %>"><%= post.title %></a></h1>
+          <p><%- post.excerpt %></p>
+        </article>
+      </li>
+      <% } %>
+    </ul>
+
+    <!-- pagination -->
+    <div class="pagination">
+    <%
+    let previous = R.defaultTo(pagination.first, pagination.previous);
+    let next = R.defaultTo(pagination.last, pagination.next);
+    %>
+      <ul>
+        <li><a href="<%= previous.path %>">Previous</a></li>
+        <%
+        for (let j = 0; j < pagination.pages.length; j++ ){
+          if (pagination.num - 1 === j){
+        %>
+        <li class="active">
+        <%  } else { %>
+        <li>
+        <%  } %>
+        <a href="<%= pagination.pages[j].path %>"><%= j + 1 %></a>
+        </li>
+        <% } %>
+        <li><a href="<%= next.path %>">Next</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- right rail -->
+  <aside id="aside-right" class="aside-column offset1 span3">
+  <%- render('partials/search') %>
+  <%- render('partials/recent-posts') %>
+  </aside>
+</div>

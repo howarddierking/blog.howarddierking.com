@@ -1,0 +1,20 @@
+machine:
+  timezone:
+    America/Los_Angeles
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker pull mhart/alpine-node:6
+    - docker pull cgswong/aws:aws
+
+test:
+  override:
+    - docker run -v `pwd`:/usr/local/blog.howarddierking.com mhart/alpine-node:6 /usr/local/blog.howarddierking.com/build.sh
+
+deployment:
+  livesite:
+    branch: master
+    commands:
+      - docker run -v ~/.aws:/root/.aws -v `pwd`/site:/var/blog.howarddierking.com cgswong/aws:aws s3 sync /var/blog.howarddierking.com s3://blog.howarddierking.com --region us-east-1 --delete

@@ -35,3 +35,12 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# site (build output) directory
+site/
+
+# OSX
+.DS_Store
+
+# expanded theme directory
+reference/theme-wise-words/

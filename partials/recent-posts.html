@@ -1,0 +1,11 @@
+<article class="widget-tag-cloud widget">
+  <header>
+    <h1>Recent Posts</h1>
+  </header>
+
+  <ul>
+    <% R.forEach(recent => { %>
+    <li><a href="<%= recent.path %>"><%= recent.title %></a></li>
+    <% }, blogposts) %>
+  </ul>
+</article>
