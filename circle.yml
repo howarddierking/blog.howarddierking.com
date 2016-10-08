@@ -4,7 +4,7 @@ machine:
   services:
     - docker
 
-dependencies: 
+dependencies:
   override:
     - docker pull node:6
     - docker pull cgswong/aws:aws
@@ -14,7 +14,7 @@ test:
     - docker run -v `pwd`:/usr/local/blog.howarddierking.com node:6 /usr/local/blog.howarddierking.com/build.sh
 
 deployment:
-  livesite: 
-    branch: 6-metalsmith
+  livesite:
+    branch: master
     commands:
       - docker run -v ~/.aws:/root/.aws -v `pwd`/site:/var/blog.howarddierking.com cgswong/aws:aws s3 sync /var/blog.howarddierking.com s3://blog.howarddierking.com --region us-east-1 --delete
