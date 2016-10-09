@@ -1,4 +1,8 @@
 <hr>
 <div class="row">
-    <div class="copyright span6">Copyright 2016 Howard Dierking</div>
+    <div class="span6 copyright">Copyright 2016 Howard Dierking</div>
+    <%
+      let cSha = typeof(GITHUB_COMMIT)==='undefined' ? '00000' : GITHUB_COMMIT;
+    %>
+    <div class="span6 copyright" style="text-align: right">Produced from <a href="https://github.com/howarddierking/blog.howarddierking.com/commit/<%= cSha %>"><%= cSha %></a></div>
 </div>

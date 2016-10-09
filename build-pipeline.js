@@ -11,6 +11,7 @@ const pagination = require('metalsmith-pagination');
 const feed = require('metalsmith-feed');
 const path = require('metalsmith-path');
 const sitemap = require('metalsmith-mapsite');
+const env = require('metalsmith-env');
 const R = require('ramda');
 
 module.exports = metalsmith(__dirname)
@@ -21,6 +22,7 @@ module.exports = metalsmith(__dirname)
       author: 'Howard Dierking'
     }
   })
+  .use(env())
   .use(drafts())
   .use(markdown())
   .use(excerpts())
