@@ -1,7 +1,7 @@
 ---
 layout: post.html
 title: Goodbye Jekyll, Hello Metalsmith!
-headerImage: /images/its-not-me.png 
+headerImage: /images/its-not-me.png
 ---
 
 While I love the simplicity of [Jekyll](https://jekyllrb.com/) for generating static Web sites from markup documents, the fact that Jekyll is built on [Ruby](https://www.ruby-lang.org/en/) and its respective ecosystem has been giving me increasing frustration. The reason for the growing frustration comes down to this:
@@ -28,7 +28,7 @@ So, that prompted me to see what Javascript static site generators were out ther
 I've spent a good bit of time with Metalsmith over the last week or so and while I still intend to try out the others listed, I'm already pretty sold on it. Here are a couple things that I _really_ like thus far about Metalsmith compared to Jekyll.
 
 * Jekyll is built on Ruby, which means installing a bunch of - sometimes native - gems at your machine level. See above rant for why I'm not a fan. Getting started with Metalsmith consists of installing its NPM package (locally) and ... that's it.
-* In the name of "convention over configuration", Jekyll is opinionated about the names and structure of directories in a Jekyll project. Metalsmith inserts zero opinion or constraint because the framework itself is little more than a UNIX-style pipe and filter engine. The framework pushes a bunch of files through a pipeline that you define in code. Additionally, everything in the pipeline is a plugin, so it really can be whatever you want for it to be. 
+* In the name of "convention over configuration", Jekyll is opinionated about the names and structure of directories in a Jekyll project. Metalsmith inserts zero opinion or constraint because the framework itself is little more than a UNIX-style pipe and filter engine. The framework pushes a bunch of files through a pipeline that you define in code. Additionally, everything in the pipeline is a plugin, so it really can be whatever you want for it to be.
 * By extension, while Jekyll clearly allows you to build any kind of Web site, its conventions remind you (well, me anyway) that it was created for building blogs. Metalsmith has no such feeling.
 * Jekyll limits you to a templating engine called [liquid](https://shopify.github.io/liquid/). I hate liquid. In order to ensure safety, I find it incredibly restrictive in the operations it supports. In fact, some of the most [complex code in the dev center today](https://github.com/concur/developer.concur.com/blob/preview/_includes/left-navigation.html) is to work around liquid's limited operational expressivity.
 * After admittedly limited exposure to it, I have a hard time understanding how people who use [Bundler](http://bundler.io/) can complain about NPM.
@@ -40,13 +40,13 @@ So what does it look like to develop a static site using Metalsmith? Well, the g
 
 ```
 mkdir myproj && cd $_
-npm init . 
+npm init .
 npm install --save metalsmith
 ```
 
 That's it! Now, granted, this doesn't do anything, but its a much simpler on-ramp than Jekyll's scaffolding-based approach that produces a bunch of different artifacts requiring a fair amount of studying to understand the larger design picture.
 
-Doing something more meaningful requires creating a Metalsmith configuration, which is nothing more than a standard Node module that requires the `metalsmith` module (which btw exports a function - hurray!) and invokes it, passing the directory of the project. The output of that function can then be chained to any number of other functions (see my use of the markdown function) before finally calling its asynchronous `build` function. 
+Doing something more meaningful requires creating a Metalsmith configuration, which is nothing more than a standard Node module that requires the `metalsmith` module (which btw exports a function - hurray!) and invokes it, passing the directory of the project. The output of that function can then be chained to any number of other functions (see my use of the markdown function) before finally calling its asynchronous `build` function.
 
 ```
 // index.js
@@ -112,4 +112,4 @@ function myplugin(config){
 }
 ```
 
-There are lots of plugins I could enumerate and lots more details I could share, but rather than do all that in this note, I'll point you to a [working example where I migrated this blog](https://github.com/howarddierking/blog.howarddierking.com/tree/6-metalsmith) from Jekyll to Metalsmith. Check it out and let me know your thoughts!
+There are lots of plugins I could enumerate and lots more details I could share, but rather than do all that in this note, I'll point you to a [working example where I migrated this blog](https://github.com/howarddierking/blog.howarddierking.com) from Jekyll to Metalsmith. Check it out and let me know your thoughts!
