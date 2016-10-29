@@ -6,7 +6,7 @@ headerImage: /images/andon-cord.jpg
 
 Software developers tend to be a bit hipsterish in that we seem to have an inherent attraction to novel things - _especially_ when those novel things are lifted from the old things of other disciplines. The Andon Cord is one of those nuggets lifted from the same corpus that brought us much of what is now termed "agile": Automobile manufacturing - specifically, the manufacturing practices of Toyota.
 
-While more thoroughly described [by others](http://itrevolution.com/kata/), the Andon Cord was a physical cord that run along side Toyota's entire production line and when pulled, stopped the assembly line. The culture that it yielded was one where every employee, no matter their role within the organization, was empowered to "pull the cord" when he or she saw a problem and bring production to a stop until the problem could be resolved.
+While more thoroughly described [by others](http://itrevolution.com/kata/), the Andon Cord was a physical cord that ran along side Toyota's entire production line and when pulled, stopped the assembly line. The culture that it yielded was one where every employee, no matter their role within the organization, was empowered to "pull the cord" when he or she saw a problem and bring production to a stop until the problem could be resolved.
 
 Empowering employees? Sign me up! Why wouldn't we want to apply this to building software???
 
@@ -22,7 +22,7 @@ Software development should be fundamentally different than manufacturing in a f
 
 * It should be inherently parallel
 * Conclusions around success or failure should be made based on measuring real things (see [Lean Startup](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898))
-* If something is determined to be a failure (again, as a result of measuring), there's no assembly line to stop. Rather, something else should be built that will obsolete the thing that failed
+* If something is determined to be a failure (again, as a result of measuring) - or if a better idea comes along - there's no assembly line to stop. Rather, something else should be built that will obsolete the first thing.
 
 This is the general approach used by companies such as [Google and EBay](http://highscalability.com/blog/2015/12/1/deep-lessons-from-google-and-ebay-on-building-ecosystems-of.html), and I think that most of us would agree that they have been pretty successful at building innovative software. So why do we have such a fascination with applying practices from manufacturing disciplines? I suspect that it's because at the end of the day, software developers are human beings, meaning that all of the principles of human nature apply equally to them as they do to those in the manufacturing industry. Some people want to be line workers and not have to think deeply beyond the task that they have been given; some people crave power and the ability to tell other people want to do; and some fall into myriad other points along the spectrum of identity and motivation.
 
