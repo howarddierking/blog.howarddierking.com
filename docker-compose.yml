@@ -5,7 +5,7 @@ services:
     volumes:
       - .:/usr/local/blog.howarddierking.com
     environment:
-      - GITHUB_COMMIT=3327743
+      - GITHUB_COMMIT=33277432342342432
     ports:
       - "80:8080"
     command: /usr/local/blog.howarddierking.com/serve.sh

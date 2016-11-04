@@ -1,6 +1,7 @@
 ---
 layout: post.html
 title: Service Ownership and Linked Data
+summary: It's hard to tease apart services. It's easier to tease apart data.
 ---
 
 As large technology companies transition to services and APIs, there will inevitably be quite a bit of debate around what data a service "owns" (and related: how to stop another service from owning that data), what document schemas should be supported, how to create and expose Swagger documents, and so on. As I've observed and participated in many of these kinds of discussions, I am convinced that while none of these discussions are fundamentally bad, they are all secondary to a [well thought-out data model based on a directed graph](http://blog.howarddierking.com/2016/10/15/a-linked-data-overview-for-web-api-developers/). Put another way, with a cohesive data model, otherwise contentious (and therefore political) debates around the number, purpose, and ownership of services, become data-driven conversations about naturally-emerging clusters of terms in a graph that describes the company's data.
