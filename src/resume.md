@@ -35,10 +35,10 @@ A JavaScript library for formatting mailing addresses to meet the standards of d
 
 * (Presenter) Web Camps – [“The Katana Project - OWIN for ASP.NET”](http://channel9.msdn.com/Shows/Web+Camps+TV/The-Katana-Project-OWIN-for-ASPNET) – May 2013
 * (Keynote Presenter) – DevTeach Montreal - 2012
-* (Presenter) TechEd NA 2011 – [“Make Yourself Comfortable and REST with Microsoft.NET”](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2011/MID307)
-* (Track Chair) ITNG 2009 Software Testing Track – April, 2009
-* (Panelist) TechEd 2009 – “Business Intelligence: Thinking Bigger about the Role of BI in Delivering Business Value”
-*	(Presenter) "IT Manager Webcast: IT Manager Community Talk with Kevin - Business Intelligence" - April 20, 2009
+* (Presenter) TechEd North America – [“Make Yourself Comfortable and REST with Microsoft.NET”](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2011/MID307) - 2011
+* (Track Chair) ITNG 2009 Software Testing Track – April 2009
+* (Panelist) TechEd North America – “Business Intelligence: Thinking Bigger about the Role of BI in Delivering Business Value” - 2009
+*	(Presenter) "IT Manager Webcast: IT Manager Community Talk with Kevin - Business Intelligence" - April 2009
 
 ### Education/Certification
 
@@ -64,10 +64,10 @@ I work with customers (typically in an advisory role) to help define and create 
   * Orchestration service for presenting multiple back-end services to the new UI layer using [GraphQL](http://graphql.org/)
   * Next-generation DevOps pipeline and tools to enable end-to-end team ownership
   * API Gateway product and service-focused production network design
-* Managed team of 15 developers, sub-divided into two, focused teams
-* Drove initiatives to enhance and transform longstanding recruiting processes by partnering with coding bootcamps such as [General Assembly](https://generalassemb.ly)
-* Provided thought leadership to other teams across Concur and SAP regarding software architecture, DevOps, and engineering culture
-* Participated in business strategy exercises, including presenting a competitive analysis and five year strategy to the executive management team
+* Manage a team of 15 developers, sub-divided into two, focused teams
+* Driving initiatives to enhance and transform recruiting practices with new strategies including partnerships with [coding bootcamps](https://generalassemb.ly) and supporting new [opportunities for internship](http://adadevelopersacademy.org/).
+* Providing thought leadership to other teams across Concur and SAP regarding software architecture, DevOps, and engineering culture
+* Working along side the executive team on business strategy activities, including competitive analysis and five year planning
 
 #### Senior Manager, Software Development
 * Drove strategy and execution for re-launching Concur's [developer center](https://developer.concur.com)
@@ -84,8 +84,8 @@ I work with customers (typically in an advisory role) to help define and create 
  	* The open-source online assets at https://github.com/NuGet
  	* The Microsoft package manager (the Microsoft distribution of NuGet in Visual Studio)
 * Ongoing architectural guidance to the development team as we re-envision our HTTP-based server API
-* Project owner for the Katana project components (http://katanaproject.nuget.org). For this project, the primary needs have been around release management and evangelism.
-*	I’m also driving some long-term efforts across several divisions within Microsoft.
+* Project owner for the Katana project components (http://katanaproject.nuget.org). For this project, the primary needs have been around release management and evangelism
+*	Drove longer-term efforts across several divisions within Microsoft
 
 #### AppFabric Developer Platform – Program Manager II
 
@@ -101,7 +101,7 @@ I work with customers (typically in an advisory role) to help define and create 
 *	Drove the engineering team to adopt more agile practices while simultaneously maintaining a high quality bar and increasing the frequency and predictability of releases
 *	Worked closely with development organization to review technical architecture decisions and research spikes
 *	Created analytics warehouse and ETL processes to aid in performance management and platform migration effort
-*	Designed, developed and released MSDN Magazine Pivot viewer, as well as the source code.
+*	Designed, developed and released MSDN Magazine Pivot viewer, as well as the source code
 
 #### MSDN Magazine – Editor-in-Chief
 
