@@ -24,7 +24,11 @@ module.exports = metalsmith(__dirname)
   })
   .use(env())
   .use(drafts())
-  .use(markdown())
+  .use(markdown({
+    smartypants: true,
+    gfm: true,
+    tables: true
+  }))
   .use(excerpts())
   .use(dateInFileName({
     override: true
