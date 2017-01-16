@@ -11,7 +11,7 @@ In typical fashion, I spent the last few weeks of 2016 reflecting over the year 
 
 ![Innovation Decision Matrix](/images/innovation-decision-matrix.png)
 
-The matrix looks at a project or a design from 2 dimensions. The x-axis considers the "forward-lookingness" of the design. While I think of design here as technology-based, I would image that you could apply the dimension to other definitions, such as UX. A few points along the x-axis (from left to right) that I typically mention as examples are:
+The matrix looks at a project or a design from 2 dimensions. The x-axis considers the "forward-lookingness" of the design. While I think of design here as technology-based, I would imagine that you could apply the dimension to other definitions, such as UX. A few points along the x-axis (from left to right) that I typically mention as examples are:
 
 * The design is an excuse to play with a shiny new technology
 * The design solves a problem on the horizon that we don't yet have
