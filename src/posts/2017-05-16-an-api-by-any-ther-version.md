@@ -1,7 +1,7 @@
 ---
 title: An API by Any Other Version
 layout: post.html
-summary: ""
+summary: "Version 3 of my thoughts on API versioning. Spoiler: It's all just about names."
 headerImage: /images/red-rose-isolated-pv.jpg
 ---
 
