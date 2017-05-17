@@ -6,6 +6,6 @@
   <ul>
     <% R.forEach(recent => { %>
     <li><a href="<%= recent.path %>"><%= recent.title %></a></li>
-    <% }, blogposts) %>
+    <% }, R.take(15, blogposts)) %>
   </ul>
 </article>
