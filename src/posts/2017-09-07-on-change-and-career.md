@@ -21,7 +21,7 @@ My thoughts here are largely in response to the massive churn of people happenin
 > You've probably noticed - either from people trying to actively recruit you or just from reading on the interwebs, people with your skill set are in really high demand right now.<br><br>
 > I've always wanted for our team to have a culture where we are open and honest with one another - and this is no exception.<br><br>
 > The simple fact is that things change all the time - it's just the world and industry we live in.<br><br>
-> Sometimes, the changes or organizational - sometimes, they're individual.<br><br>
+> Sometimes, the changes are organizational - sometimes, they're individual.<br><br>
 > And here's what I want for you to know - it's perfectly normal and perfectly fine.<br><br>
 > I have always and continue to believe that every person on this team has incredible potential - and from the moment you all joined, I have known that at some point, you will outgrow your project, your team, and eventually this company.<br><br>
 > Again, this is perfectly natural.<br><br>
