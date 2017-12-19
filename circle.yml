@@ -6,12 +6,12 @@ machine:
 
 dependencies:
   override:
-    - docker pull mhart/alpine-node:6
+    - docker pull mhart/alpine-node:8
     - docker pull cgswong/aws:aws
 
 test:
   override:
-    - docker run -e GITHUB_COMMIT=${CIRCLE_SHA1} -v `pwd`:/usr/local/blog.howarddierking.com mhart/alpine-node:6 /usr/local/blog.howarddierking.com/build.sh
+    - docker run -e GITHUB_COMMIT=${CIRCLE_SHA1} -v `pwd`:/usr/local/blog.howarddierking.com mhart/alpine-node:8 /usr/local/blog.howarddierking.com/build.sh
 
 deployment:
   livesite:
