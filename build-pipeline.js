@@ -18,7 +18,7 @@ module.exports = metalsmith(__dirname)
   .metadata({
     site: {
       title: 'blog.howarddierking.com',
-      url: 'http://blog.howarddierking.com',
+      url: 'https://blog.howarddierking.com',
       author: 'Howard Dierking'
     }
   })
@@ -61,7 +61,7 @@ module.exports = metalsmith(__dirname)
     directoryIndex: 'index.html'
   }))
   .use(sitemap({
-    hostname: 'http://blog.howarddierking.com'
+    hostname: 'https://blog.howarddierking.com'
   }))
   .use(layouts({
     engine: 'qejs',
