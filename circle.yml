@@ -11,10 +11,10 @@ dependencies:
 
 test:
   override:
-    - docker run -e GITHUB_COMMIT=${CIRCLE_SHA1} -v `pwd`:/usr/local/blog.howarddierking.com mhart/alpine-node:8 /usr/local/blog.howarddierking.com/build.sh
+    - docker run -e GITHUB_COMMIT=${CIRCLE_SHA1} -v `pwd`:/usr/local/www.howarddierking.com mhart/alpine-node:8 /usr/local/www.howarddierking.com/build.sh
 
 deployment:
   livesite:
     branch: master
     commands:
-      - docker run -v ~/.aws:/root/.aws -v `pwd`/site:/var/blog.howarddierking.com cgswong/aws:aws s3 sync /var/blog.howarddierking.com s3://blog.howarddierking.com --region us-east-1 --delete
+      - docker run -v ~/.aws:/root/.aws -v `pwd`/site:/var/www.howarddierking.com cgswong/aws:aws s3 sync /var/www.howarddierking.com s3://blog.howarddierking.com --region us-east-1 --delete

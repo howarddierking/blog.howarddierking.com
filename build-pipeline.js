@@ -17,8 +17,8 @@ const R = require('ramda');
 module.exports = metalsmith(__dirname)
   .metadata({
     site: {
-      title: 'blog.howarddierking.com',
-      url: 'https://blog.howarddierking.com',
+      title: 'www.howarddierking.com',
+      url: 'https://www.howarddierking.com',
       author: 'Howard Dierking'
     }
   })
@@ -61,7 +61,7 @@ module.exports = metalsmith(__dirname)
     directoryIndex: 'index.html'
   }))
   .use(sitemap({
-    hostname: 'https://blog.howarddierking.com'
+    hostname: 'https://www.howarddierking.com'
   }))
   .use(layouts({
     engine: 'qejs',

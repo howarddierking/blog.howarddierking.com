@@ -3,9 +3,9 @@ services:
   web:
     image: mhart/alpine-node:6
     volumes:
-      - .:/usr/local/blog.howarddierking.com
+      - .:/usr/local/www.howarddierking.com
     environment:
       - GITHUB_COMMIT=33277432342342432
     ports:
       - "80:8080"
-    command: /usr/local/blog.howarddierking.com/serve.sh
+    command: /usr/local/www.howarddierking.com/serve.sh

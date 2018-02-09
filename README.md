@@ -1,4 +1,4 @@
-# blog.howarddierking.com
+# www.howarddierking.com
 My personal blog. Also a testbed for experiments with different Node-based static site generators
 
 ## To run locally
