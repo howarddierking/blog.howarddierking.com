@@ -17,4 +17,4 @@ deployment:
   livesite:
     branch: master
     commands:
-      - docker run -v ~/.aws:/root/.aws -v `pwd`/site:/var/www.howarddierking.com cgswong/aws:aws s3 sync /var/www.howarddierking.com s3://blog.howarddierking.com --region us-east-1 --delete
+      - docker run -v ~/.aws:/root/.aws -v `pwd`/site:/var/www.howarddierking.com cgswong/aws:aws s3 sync /var/www.howarddierking.com s3://www.howarddierking.com --region us-east-1 --delete
