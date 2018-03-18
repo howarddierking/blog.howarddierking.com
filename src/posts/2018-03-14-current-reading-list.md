@@ -21,7 +21,7 @@ Every now and then, somebody will ask me what I'm currently reading or researchi
 * [JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix/read) - Applicative programming in Javascript - plus a bunch of other good things.
 * [Haskell Programming From First Principles](https://gumroad.com/d/e76dd1c96380785b1845121c8ada5908) - I'm a glutton for punishment?
 * [Semantic Web for the Working Ontologist](https://www.amazon.com/Semantic-Web-Working-Ontologist-Effective/dp/0123735564) - I've read about half of this book in the past and got pulled away. I think part of my problem in the past was an improper understanding of linked data: I was looking at linked data as a bunch of techniques to produce better RESTful APIs. I've since come to the belief that RESTful APIs are a rather uninteresting characteristic of a linked data application - and there's a *lot* more that linked data has to offer.
-[Learning SPARQL](http://www.learningsparql.com/) - An essential tool if you want to have a practical understanding of linked data.
+* [Learning SPARQL](http://www.learningsparql.com/) - An essential tool if you want to have a practical understanding of linked data.
 
 ## Journals
 
