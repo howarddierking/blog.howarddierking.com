@@ -2,7 +2,7 @@
 title: RDF Inferencing In Action
 layout: post.html
 summary: "If you've been reading this blog for any period of time, you've probably heard me go on about linked data is magically awesome. In this post, I'll show you an example."
-headerImage: 
+headerImage: /images/math-wifi.jpg
 ---
 
 If you've been around me for any period of time, you've probably heard me say that I find two common approaches to software development: the mathematician's approach and the linguist's approach. The mathematician views the software design process as an equation to balance and typically does incredibly well at problems relating to algorithms, analysis, and lower-level system domains. The linguist, on the other hand, views the process of creating software as an exposition - a way of communicating an abstract idea via a constrained medium such as a programming language. Both groups are useful and necessary: some of the worst code I have ever seen was written by individual with PhDs in computer science or mathematics; many an expressive program falls flat on its face when put under the most trivial of loads. I imagine that most of you already know to which camp I belong, but just in case there was any question, I unapologetically and undeniably belong to the linguists. 
