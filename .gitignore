@@ -44,3 +44,6 @@ site/
 
 # expanded theme directory
 reference/theme-wise-words/
+
+# firebase hosting deployment cache (used for optimizing deployment times)
+.firebase/

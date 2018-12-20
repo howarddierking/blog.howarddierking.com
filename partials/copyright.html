@@ -2,7 +2,7 @@
 <div class="row">
     <div class="span6 copyright">Copyright 2016 Howard Dierking</div>
     <%
-      let cSha = typeof(GITHUB_COMMIT)==='undefined' ? '0000000000000000000000' : GITHUB_COMMIT;
+      let cSha = typeof(COMMIT_SHORT)==='undefined' ? '0000000000000000000000' : COMMIT_SHORT;
     %>
-    <div class="span6 copyright" style="text-align: right">Produced from <a href="https://github.com/howarddierking/blog.howarddierking.com/commit/<%= cSha %>"><%= cSha.substring(0, 7) %></a></div>
+    <div class="span6 copyright" style="text-align: right">Produced from <a href="https://github.com/howarddierking/blog.howarddierking.com/commit/<%= cSha %>"><%= cSha %></a></div>
 </div>

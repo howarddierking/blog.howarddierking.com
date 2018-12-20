@@ -1,0 +1,15 @@
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+    env:
+      - 'COMMIT_SHORT=$SHORT_SHA'
+  - name: 'gcr.io/$PROJECT_ID/firebase'
+    args: ['deploy', '--project', '$PROJECT_ID']
+    secretEnv: ['FIREBASE_TOKEN']
+
+secrets:
+  - kmsKeyName: 'projects/www-howarddierking-com/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
+    secretEnv:
+      FIREBASE_TOKEN: 'CiQASGBRZUHzZkH1l/8l/OuEwgDlDmISW3m5oaamqBMISCLhvOASVgCM/8WrbTOhEKP2eoEp2CEP8v7611TLgTTDkNm6wq9lEYFcwUMZzi0O1F2J0Jrh9Hs72udo95/+OkvFLbUBj0KYuubPEvpB7rD//tuq8ychOWDjrZYY'
