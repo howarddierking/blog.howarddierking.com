@@ -1,0 +1,10 @@
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+    env:
+      - 'COMMIT_SHORT=$SHORT_SHA'
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['cp', '-r', 'site', 'gs://www-howarddierking-com_cloudbuild/']
+
