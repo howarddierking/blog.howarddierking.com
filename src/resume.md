@@ -19,22 +19,32 @@ I'm all about seeing products get built and people developed. In my career, this
 * *Business Strategy*: Conducted competitive and market analyses, derived strategy proposals, and presented those to company executives – both in person and in writing.
 * *Stakeholder Engagement*: Demonstrated success in leading internal stakeholders and collaborating with external vendors (e.g. Google, Starbucks, Microsoft) to drive positive outcomes in technology management.
 * *Public Speaking*: Regular lecturer as a subject matter expert at both conferences and individual company events (Microsoft, Disney, Visa) with audience sizes ranging from 25-750.
-* *Teaching and Writing*: Published teacher through the online education hub Pluralsight and a published author for 2 books and several journal articles. Regularly publish educational content to personal blog (http://blog.howarddierking.com).
+* *Teaching and Writing*: Published teacher through the online education hub Pluralsight and a published author for 2 books and several journal articles. Regularly publish educational content to personal blog (http://www.howarddierking.com).
 * *Open Source*: Initiated new open-source projects, worked with internal counsel to release internal products to the open-source community, and managed active projects and communities.
 * *Budget Management*: Demonstrated leadership in both meeting budgetary expectations and also in budget planning for budgets up to 1MM USD.
 
 ## Professional Experience
 
+### [Concur](https://www.concur.com/) - Senior Director of Software Development
+#### November 2018 - Present
+
+* *Organizational Leadership*: Lead global architecture for Concur's spend management organization. Participate in SAP global architecture initiatives and facilitate bidirectional information sharing between SAP and Concur.
+* *Vision Development*: Define and assimilate principles for modern, cloud-native architecture, translate those principles into achievable strategies and tactics, then evangelize those strategies and tactics across Concur's spend organization.
+* *Team Management*: Direct manager for six globally-distributed architects as well as skip-level manager for a cloud-native infrastructure and tools team.
+* *Technology Research and Strategy*: Individual research into event-driven, cloud-native architecture as well as the strategic application of semantic Web and linked data to enterprise applications.
+* *Architecture*: Craft high-level architectural vision and strategy, then work with my team and other engineering leaders to implement within individual teams.
+* *Product Planning*: Guide transition planning for teams through company reorganizations as well as produce and execute an operating model for architecture team.
+
 ### [Concur](https://www.concur.com/) - Director of Software Development
-#### June 2015 – Present
+#### June 2015 – November 2018
 
 * *Vision Development*: Distill high-level executive management goals into concrete problem definitions that can be pursued by both my development teams and our business counterparts.
 * *Team Management*: Manage a team of 25 developers (including 4 development managers), divided into 4 organizational units. Includes employees in Bellevue, WA, Vienna, VA, and Maidenhead, UK.
 * *Global Project Management*: Partnered with colleagues in France and Japan to deliver next generation receipts service globally. Coordinated with colleagues in Germany and Prague to deliver a data orchestration service. Actively overseeing the development and operation of 5 projects in various stages of development.
 * *Organizational Leadership*: Worked with peer to create career competencies and paths for all Concur engineers and managers. Participated in physical space design/planning to create a collaborative team environment. Participated in additional cross-company functions as part of CTO extended leadership group. Influenced technical leaders across SAP in areas such as service design and cloud architecture.
 * *Stakeholder Engagement*: Actively manage relationships with peers across the company for building consensus around key company-level decisions. Participate in partner engagements to ensure that customer requirements are clearly understood and that partners feel supported.
-* *Business Strategy*: Conducted competitive analyses and presented 5-year strategic plan to company executives.
-* *Technology Research and Strategy*: Actively researching and providing thought leadership for semantic web and linked data technology as well as cloud-native software architecture.
+* *Business Strategy*: Conduct competitive analyses and presented 5-year strategic plan to company executives.
+* *Technology Research and Strategy*: Research and provide thought leadership for semantic web and linked data technology as well as cloud-native software architecture.
 * *Public Speaking*: Invited to speak at SAP developer conference in Germany two years in a row. Highest-rated lecturer by external company in 2016.
 * *Budget Management*: Manage budgets for personnel, morale, and equipment.
 
@@ -48,14 +58,14 @@ I'm all about seeing products get built and people developed. In my career, this
 * *Public Speaking*: Gave multiple presentations (both within and outside the company) on services architecture, developer pipeline, and team workflow.
 * *Open Source*: Drove release of multiple team projects as open-source on GitHub (https://github.com/concur), including the Concur developer center. Since release as open source, developer center has been forked 50+ times and has 50+ contributors.
 
-### [Dierking Consulting, LLC](http://blog.howarddierking.com) - Principal
+### [Dierking Consulting, LLC](http://www.howarddierking.com) - Principal
 #### April 2013 – Present
 
 * *Technology Research and Strategy*: Research tools and techniques for building large-scale, cloud-native applications. Topics gravitate around cloud platforms and data management/processing tools.
 * *Architecture*: Help customers define and create software systems for a variety of different business domains and technology stacks.  Have worked with companies of all types and sizes (including a large health insurance company, a child safety non-profit, and a 3-person Silicon Valley startup).
 * *Global Project Management*: Led client development teams in the United States, Mexico, Europe, and Asia in implementing designs and delivering capabilities.
 * *Business Strategy*: Performed market analyses for clients to determine product and feature viability. Participated in go-to-market strategy creation and execution.
-* *Teaching and Writing*: Created online training material for Pluralsight, contributed to several books and journals, and regularly publish content to http://blog.howarddierking.com.
+* *Teaching and Writing*: Created online training material for Pluralsight, contributed to several books and journals, and regularly publish content to http://www.howarddierking.com.
 
 ### [Microsoft](https://www.microsoft.com/) - Senior Program Manager (ASP.NET)
 #### January 2012 – Sept. 2014
@@ -168,7 +178,7 @@ I'm all about seeing products get built and people developed. In my career, this
 ## Open Source
 
 * [metalsmith-ldschema](https://github.com/howarddierking/metalsmith-ldschema).  Metalsmith plugin for generating Web documentation for a linked data vocabulary. Inspired by https://schema.org.
-* [blog.howarddierking.com](https://github.com/howarddierking/blog.howarddierking.com).  My personal blog. Also a testbed for experiments with different Node-based static site generators.
+* [www.howarddierking.com](https://github.com/howarddierking/blog.howarddierking.com).  My personal blog. Also a testbed for experiments with different Node-based static site generators.
 * [building-restful-services](https://github.com/howarddierking/building-restful-services).  Contains all sample code for my Pluralsight course, Building RESTful Services.
 * [international-address](https://github.com/howarddierking/international-address).  NodeJS-based formatting library for international addresses.
 * [ssis-wcf-dataservices](https://bitbucket.org/howarddierking/ssis-wcf-dataservices). This code sample shows you how to create a SQL Server Integration Services custom data source that can interoperate with WCF Data Services (formerly known as Astoria). In addition to simply illustrating the mechanics of working with SSIS and ADO.NET Data Services, the sample also illustrates some design practices and techniques such as separation of concerns and behavior-driven development.
@@ -189,7 +199,7 @@ I'm all about seeing products get built and people developed. In my career, this
 
 ## Contact
 
-* Blog: http://blog.howarddierking.com
+* Blog: http://www.howarddierking.com
 * Prior Blog: http://codebetter.com/howarddierking
 * Twitter: [@howard_dierking](https://twitter.com/howard_dierking)
 * Stack Exchange: https://careers.stackoverflow.com/cv/employer/103090
