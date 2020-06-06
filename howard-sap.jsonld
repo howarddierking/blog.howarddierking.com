@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "@vocab": "https://schema.sap.com/",
+    "@base": "https://www.howarddierking.com",
+    "firstName": "givenName",
+    "lastName": "surname"
+  },
+  "@id": "howard-sap.jsonld",
+  "firstName": "Howard",
+  "lastName": "Dierking"
+}
