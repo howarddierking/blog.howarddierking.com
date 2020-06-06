@@ -5,7 +5,7 @@
     "firstName": "givenName",
     "lastName": "surname"
   },
-  "@id": "howard-sap.jsonld",
+  "@id": "jennifer-sap.jsonld",
   "firstName": "Jennifer",
   "lastName": "Dierking"
 }
