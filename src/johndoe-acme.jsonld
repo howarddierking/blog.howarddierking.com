@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "@vocab": "https://schema.acme.com/",
+    "@base": "https://www.howarddierking.com/",
+  },
+  "@id": "johndoe-acme.jsonld",
+  "firstName": "John",
+  "lastName": "Doe"
+}
